@@ -6,7 +6,7 @@ import createEmotionCache from '../utility/createEmotionCache'
 import '../styles/globals.css'
 import SearchAppBar from '../components/AppBar'
 import { AppWrapper } from '../src/context/state'
-import theme from './theme'
+import theme from '../styles/theme/theme'
 
 const clientSideEmotionCache = createEmotionCache()
 
