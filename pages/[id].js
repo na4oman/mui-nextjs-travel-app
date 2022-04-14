@@ -102,7 +102,7 @@ function TourDetail() {
         elevation={3}
       >
         <BottomNavigation showLabels>
-          <BottomNavigationAction icon={<BasicModal />} />
+          <BasicModal />
         </BottomNavigation>
       </Paper>
     </Container>
