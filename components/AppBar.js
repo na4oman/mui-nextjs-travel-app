@@ -64,7 +64,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }))
 
-export default function SearchAppBar() {
+export default function SearchAppBar({ onToggleDrawer }) {
   const appCtx = React.useContext(AppContext)
 
   function handleSearchChange(e) {
@@ -94,6 +94,7 @@ export default function SearchAppBar() {
       <AppBar position='static' color='primary'>
         <Toolbar>
           <IconButton
+            onClick={onToggleDrawer}
             size='large'
             edge='start'
             color='inherit'
@@ -135,12 +136,6 @@ export default function SearchAppBar() {
               position: 'relative',
               ml: 2,
               '&:hover': {
-                '& .bookmarksList': {
-                  visibility: 'visible',
-                  opacity: 1,
-                },
-              },
-              '&:active': {
                 '& .bookmarksList': {
                   visibility: 'visible',
                   opacity: 1,
