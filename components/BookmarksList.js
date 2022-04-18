@@ -8,6 +8,8 @@ import AppContext from '../src/context/state'
 import Typography from '@mui/material/Typography'
 import { useRouter } from 'next/router'
 import DeleteIcon from '@mui/icons-material/Delete'
+import { TransitionGroup } from 'react-transition-group'
+import Collapse from '@mui/material/Collapse'
 
 export default function BookmarksList() {
   const router = useRouter()
@@ -17,53 +19,56 @@ export default function BookmarksList() {
 
   return (
     <List sx={{ width: '160%', maxWidth: 900, bgcolor: 'background.paper' }}>
-      {bookmarks.map(bookmark => (
-        <ListItem
-          onClick={() => router.push(`/${bookmark.id}`)}
-          key={bookmark.id}
-          sx={{
-            transition: 'all .3s',
-            '&:hover': {
-              backgroundColor: 'background.light',
-              // transform: 'translateY(-2px)',
-            },
-          }}
-        >
-          <ListItemAvatar>
-            <Avatar alt={bookmark.name} src={bookmark.image} />
-          </ListItemAvatar>
-          <ListItemText
-            primary={bookmark.name}
-            secondary={
-              <React.Fragment>
-                <Typography
-                  sx={{ display: 'inline' }}
-                  component='span'
-                  variant='body2'
-                  color='text.primary'
-                >
-                  $
-                </Typography>
-                {bookmark.price}
-                <Typography
-                  sx={{ display: 'inline' }}
-                  component='span'
-                  variant='body2'
-                  color='text.primary'
-                >
-                  {` - rating ${bookmark.rating}`}
-                </Typography>
-              </React.Fragment>
-            }
-          />
-          <DeleteIcon
-            onClick={event => {
-              event.stopPropagation()
-              appCtx.deleteFromBookmark(bookmark.id)
-            }}
-          />
-        </ListItem>
-      ))}
+      <TransitionGroup>
+        {bookmarks.map(bookmark => (
+          <Collapse key={bookmark.id}>
+            <ListItem
+              onClick={() => router.push(`/${bookmark.id}`)}
+              key={bookmark.id}
+              sx={{
+                transition: 'all .3s',
+                '&:hover': {
+                  backgroundColor: 'background.light',
+                },
+              }}
+            >
+              <ListItemAvatar>
+                <Avatar alt={bookmark.name} src={bookmark.image} />
+              </ListItemAvatar>
+              <ListItemText
+                primary={bookmark.name}
+                secondary={
+                  <React.Fragment>
+                    <Typography
+                      sx={{ display: 'inline' }}
+                      component='span'
+                      variant='body2'
+                      color='text.primary'
+                    >
+                      $
+                    </Typography>
+                    {bookmark.price}
+                    <Typography
+                      sx={{ display: 'inline' }}
+                      component='span'
+                      variant='body2'
+                      color='text.primary'
+                    >
+                      {` - rating ${bookmark.rating}`}
+                    </Typography>
+                  </React.Fragment>
+                }
+              />
+              <DeleteIcon
+                onClick={event => {
+                  event.stopPropagation()
+                  appCtx.deleteFromBookmark(bookmark.id)
+                }}
+              />
+            </ListItem>
+          </Collapse>
+        ))}
+      </TransitionGroup>
     </List>
   )
 }

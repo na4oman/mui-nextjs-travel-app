@@ -140,6 +140,12 @@ export default function SearchAppBar() {
                   opacity: 1,
                 },
               },
+              '&:active': {
+                '& .bookmarksList': {
+                  visibility: 'visible',
+                  opacity: 1,
+                },
+              },
             }}
           >
             <Badge badgeContent={appCtx.bookmarks.length} color='error'>
