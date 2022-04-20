@@ -84,10 +84,7 @@ export default function SearchAppBar({ onToggleDrawer }) {
     // appCtx.filterCities(filteredTours)
   }
 
-  function handleBookmarks() {
-    // redirect to a Bookmarks Page
-    // console.log(appCtx.bookmarks)
-  }
+  function closeBookmarks() {}
 
   return (
     <Box sx={{ flexGrow: 1 }}>
@@ -127,7 +124,7 @@ export default function SearchAppBar({ onToggleDrawer }) {
             />
           </Search>
           <IconButton
-            onClick={handleBookmarks}
+            onClick={closeBookmarks}
             size='large'
             edge='start'
             color='inherit'
@@ -141,6 +138,13 @@ export default function SearchAppBar({ onToggleDrawer }) {
                   opacity: 1,
                 },
               },
+              // '&:focus': {
+              //   '& .bookmarksList': {
+              //     visibility: 'visible',
+              //     opacity: 1,
+              //   },
+              // },
+              // tabIndex: 1,
             }}
           >
             <Badge badgeContent={appCtx.bookmarks.length} color='error'>

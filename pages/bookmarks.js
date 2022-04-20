@@ -9,10 +9,10 @@ import TourCard from '../components/TourCard'
 import AppContext from '../src/context/state'
 import usePagination from '../src/Pagination'
 
-function Home() {
+function Bookmarks() {
   const appCtx = useContext(AppContext)
 
-  const tours = appCtx.cities
+  const tours = appCtx.bookmarks
 
   const [page, setPage] = useState(1)
   const PER_PAGE = 8
@@ -50,7 +50,7 @@ function Home() {
           mb={2}
           sx={{ textAlign: 'center' }}
         >
-          Most Visited Destinations
+          My Bookmarks
         </Typography>
         <Grid
           mb={5}
@@ -80,4 +80,4 @@ function Home() {
   )
 }
 
-export default Home
+export default Bookmarks

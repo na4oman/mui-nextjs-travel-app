@@ -10,7 +10,7 @@
       "excerpt": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, animi quis! Illum, aut. Non reiciendis inventore consequatur, nihil optio quo!",
       "image": "https://images.unsplash.com/photo-1514890547357-a9ee288728e0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      "destination": "Niagara Falls"
+      "location": [45.435418300100274, 12.327820450159862]
     },
     {
       "id": 2,
@@ -22,7 +22,7 @@
       "excerpt": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, animi quis! Illum, aut. Non reiciendis inventore consequatur, nihil optio quo!",
       "image": "https://images.unsplash.com/photo-1590401245028-e0c4a55c013c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
       "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
-      "destination": "Niagara Falls"
+      "location": [46.96317347568191, 7.955501019478283]
     },
     {
       "id": 3,
@@ -34,7 +34,7 @@
       "excerpt": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, animi quis! Illum, aut. Non reiciendis inventore consequatur, nihil optio quo!",
       "image": "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of 'de Finibus Bonorum et Malorum' (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 'Lorem ipsum dolor sit amet..', comes from a line in section 1.10.32.",
-      "destination": "Niagara Falls"
+      "location": [51.17888197958245, -1.8262257306707081]
     },
     {
       "id": 4,
@@ -46,7 +46,7 @@
       "excerpt": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, animi quis! Illum, aut. Non reiciendis inventore consequatur, nihil optio quo!",
       "image": "https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
-      "destination": "Niagara Falls"
+      "location": [42.871471073592616, -78.88095724013489]
     },
     {
       "id": 5,
@@ -58,7 +58,7 @@
       "excerpt": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, animi quis! Illum, aut. Non reiciendis inventore consequatur, nihil optio quo!",
       "image": "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc facilisis, diam at sollicitudin auctor, odio nibh posuere nisi, eu laoreet dolor leo tristique mauris. Praesent tincidunt volutpat hendrerit. Fusce convallis placerat quam, a faucibus elit condimentum eget. In eleifend est a sem molestie ultricies. Nullam blandit, orci a condimentum viverra, nisl sapien porta metus, id cursus sapien leo sit amet turpis. Ut et elit id sapien vehicula tristique. Proin iaculis mattis hendrerit. Nam semper imperdiet consequat. Nam imperdiet fringilla mi, non vestibulum est tincidunt non. Aliquam faucibus eros et ex commodo, non rhoncus mauris imperdiet. Praesent suscipit velit sed consequat luctus. Aliquam convallis felis eu mauris bibendum pulvinar. Phasellus ut aliquet ligula.",
-      "destination": "Las Vegas"
+      "location": [42.60353095659399, 23.310721984343456]
     },
     {
       "id": 6,
@@ -70,7 +70,7 @@
       "excerpt": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, animi quis! Illum, aut. Non reiciendis inventore consequatur, nihil optio quo!",
       "image": "https://images.unsplash.com/photo-1615551043360-33de8b5f410c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Z3JhbmQlMjBjYW55b258ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
       "description": "Maecenas in libero est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pulvinar efficitur sem, non suscipit nunc commodo a. Praesent laoreet semper elit sed elementum. Vivamus nec venenatis lacus. Morbi auctor dolor non dolor vehicula ullamcorper. Praesent venenatis neque ut elementum maximus. Etiam vel pretium tortor. Proin at diam enim. Sed accumsan lobortis dolor, non semper sem hendrerit nec. Nulla blandit sagittis est, vitae sodales metus scelerisque sed.",
-      "destination": "Las Vegas"
+      "location": [36.1139909023059, -112.10022305293734]
     },
     {
       "id": 7,
@@ -82,7 +82,7 @@
       "excerpt": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, animi quis! Illum, aut. Non reiciendis inventore consequatur, nihil optio quo!",
       "image": "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       "description": "Fusce ac facilisis neque. Proin tempus diam eget gravida porttitor. Maecenas sodales enim non neque mollis, ut interdum purus pretium. Integer quis arcu sit amet lectus tincidunt pharetra nec at nunc. Vestibulum aliquam convallis nibh id euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras fringilla magna eu sapien placerat commodo. Etiam porttitor, nibh sed tincidunt euismod, metus nunc tristique augue, eu maximus est magna ac nisl. Vestibulum nec malesuada turpis.",
-      "destination": "Las Vegas"
+      "location": [47.61895911800267, -122.53191877705352]
     },
     {
       "id": 8,
@@ -94,7 +94,7 @@
       "excerpt": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, animi quis! Illum, aut. Non reiciendis inventore consequatur, nihil optio quo!",
       "image": "https://images.unsplash.com/photo-1444723121867-7a241cacace9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       "description": "Fusce rhoncus tortor non accumsan ornare. Fusce finibus magna id nisi condimentum fringilla. Nam id augue eros. Integer dolor lectus, vehicula sed sem eu, aliquet tristique dui. Sed ut eros maximus, accumsan purus cursus, sollicitudin lacus. Sed maximus iaculis dolor, ut scelerisque mi elementum non. Vestibulum vel quam eu velit iaculis blandit dignissim vel purus. Proin et vehicula dui. Cras luctus justo eget massa bibendum ullamcorper. Integer non urna laoreet, tempus nibh eu, molestie neque. Ut non hendrerit nunc. Ut dui libero, condimentum in libero id, elementum rutrum lorem. Integer eget elit pharetra, blandit elit sed, eleifend neque. Nunc semper elit ac enim rutrum, eu posuere augue auctor.",
-      "destination": "Las Vegas"
+      "location": [40.61380266102706, -73.82865436541144]
     },
     {
       "id": 9,
@@ -106,7 +106,7 @@
       "excerpt": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, animi quis! Illum, aut. Non reiciendis inventore consequatur, nihil optio quo!",
       "image": "https://images.unsplash.com/photo-1518391846015-55a9cc003b25?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fG5ldyUyMHlvcmt8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      "destination": "Niagara Falls"
+      "location": [40.581477807292956, -74.14451129393241]
     },
     {
       "id": 10,
@@ -118,7 +118,7 @@
       "excerpt": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, animi quis! Illum, aut. Non reiciendis inventore consequatur, nihil optio quo!",
       "image": "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2l0eXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
       "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
-      "destination": "Niagara Falls"
+      "location": [41.89986736050694, -87.64548131058432]
     },
     {
       "id": 11,
@@ -130,7 +130,7 @@
       "excerpt": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, animi quis! Illum, aut. Non reiciendis inventore consequatur, nihil optio quo!",
       "image": "https://images.unsplash.com/photo-1514565131-fce0801e5785?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGNpdHl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
       "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of 'de Finibus Bonorum et Malorum' (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 'Lorem ipsum dolor sit amet..', comes from a line in section 1.10.32.",
-      "destination": "Niagara Falls"
+      "location": [40.73005452218863, -74.08040614859048]
     },
     {
       "id": 12,
@@ -142,7 +142,7 @@
       "excerpt": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, animi quis! Illum, aut. Non reiciendis inventore consequatur, nihil optio quo!",
       "image": "https://images.unsplash.com/photo-1496568816309-51d7c20e3b21?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGNpdHl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
       "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
-      "destination": "Niagara Falls"
+      "location": [40.82405268659425, -73.86573322223782]
     },
     {
       "id": 13,
@@ -154,7 +154,7 @@
       "excerpt": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, animi quis! Illum, aut. Non reiciendis inventore consequatur, nihil optio quo!",
       "image": "https://images.unsplash.com/photo-1467226632440-65f0b4957563?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGNpdHl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc facilisis, diam at sollicitudin auctor, odio nibh posuere nisi, eu laoreet dolor leo tristique mauris. Praesent tincidunt volutpat hendrerit. Fusce convallis placerat quam, a faucibus elit condimentum eget. In eleifend est a sem molestie ultricies. Nullam blandit, orci a condimentum viverra, nisl sapien porta metus, id cursus sapien leo sit amet turpis. Ut et elit id sapien vehicula tristique. Proin iaculis mattis hendrerit. Nam semper imperdiet consequat. Nam imperdiet fringilla mi, non vestibulum est tincidunt non. Aliquam faucibus eros et ex commodo, non rhoncus mauris imperdiet. Praesent suscipit velit sed consequat luctus. Aliquam convallis felis eu mauris bibendum pulvinar. Phasellus ut aliquet ligula.",
-      "destination": "Las Vegas"
+      "location": [34.032681012323486, -118.32662753565606]
     },
     {
       "id": 14,
@@ -166,7 +166,7 @@
       "excerpt": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, animi quis! Illum, aut. Non reiciendis inventore consequatur, nihil optio quo!",
       "image": "https://images.unsplash.com/photo-1517511620798-cec17d428bc0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzF8fGNpdHl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
       "description": "Maecenas in libero est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pulvinar efficitur sem, non suscipit nunc commodo a. Praesent laoreet semper elit sed elementum. Vivamus nec venenatis lacus. Morbi auctor dolor non dolor vehicula ullamcorper. Praesent venenatis neque ut elementum maximus. Etiam vel pretium tortor. Proin at diam enim. Sed accumsan lobortis dolor, non semper sem hendrerit nec. Nulla blandit sagittis est, vitae sodales metus scelerisque sed.",
-      "destination": "Las Vegas"
+      "location": [34.209386811005494, -118.5063801182367]
     },
     {
       "id": 15,
@@ -178,7 +178,7 @@
       "excerpt": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, animi quis! Illum, aut. Non reiciendis inventore consequatur, nihil optio quo!",
       "image": "https://images.unsplash.com/photo-1611440052868-58b551b07e2c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FuYWx8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
       "description": "Fusce ac facilisis neque. Proin tempus diam eget gravida porttitor. Maecenas sodales enim non neque mollis, ut interdum purus pretium. Integer quis arcu sit amet lectus tincidunt pharetra nec at nunc. Vestibulum aliquam convallis nibh id euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras fringilla magna eu sapien placerat commodo. Etiam porttitor, nibh sed tincidunt euismod, metus nunc tristique augue, eu maximus est magna ac nisl. Vestibulum nec malesuada turpis.",
-      "destination": "Las Vegas"
+      "location": [52.377642964244274, 4.887473844388494]
     },
     {
       "id": 16,
@@ -190,7 +190,7 @@
       "excerpt": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, animi quis! Illum, aut. Non reiciendis inventore consequatur, nihil optio quo!",
       "image": "https://images.unsplash.com/photo-1511358146320-eb018ab3e22e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bmlhZ2FyYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
       "description": "Fusce rhoncus tortor non accumsan ornare. Fusce finibus magna id nisi condimentum fringilla. Nam id augue eros. Integer dolor lectus, vehicula sed sem eu, aliquet tristique dui. Sed ut eros maximus, accumsan purus cursus, sollicitudin lacus. Sed maximus iaculis dolor, ut scelerisque mi elementum non. Vestibulum vel quam eu velit iaculis blandit dignissim vel purus. Proin et vehicula dui. Cras luctus justo eget massa bibendum ullamcorper. Integer non urna laoreet, tempus nibh eu, molestie neque. Ut non hendrerit nunc. Ut dui libero, condimentum in libero id, elementum rutrum lorem. Integer eget elit pharetra, blandit elit sed, eleifend neque. Nunc semper elit ac enim rutrum, eu posuere augue auctor.",
-      "destination": "Las Vegas"
+      "location": [43.08046113823053, -79.07674039027968]
     }
   ]
 }
