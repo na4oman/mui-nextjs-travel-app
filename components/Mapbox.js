@@ -101,6 +101,9 @@ const Mapbox = ({ lng, lat }) => {
         zoom: 9,
       })
 
+      // Add zoom and rotation controls to the map.
+      map.addControl(new mapboxgl.NavigationControl())
+
       map.on('load', () => {
         setMap(map)
         map.resize()
@@ -108,7 +111,7 @@ const Mapbox = ({ lng, lat }) => {
     }
 
     if (!map) initializeMap({ setMap, mapContainer })
-  }, [map])
+  }, [map, lat, lng])
 
   return <div ref={el => (mapContainer.current = el)} style={styles} />
 }
