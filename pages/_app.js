@@ -48,6 +48,10 @@ function MyApp(props) {
               name='viewport'
               content='width=device-width, initial-scale=1'
             />
+            <link
+              href='https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css'
+              rel='stylesheet'
+            />
           </Head>
           {showDrawer && (
             <MaterialUIDrawer

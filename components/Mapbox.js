@@ -1,10 +1,14 @@
+/*
 import React, { useRef, useEffect, useState } from 'react'
 import mapboxgl from '!mapbox-gl' // eslint-disable-line import/no-webpack-loader-syntax
+import 'mapbox-gl/dist/mapbox-gl.css'
 import { styled } from '@mui/system'
 
 const MapContainer = styled('div')({
   height: '400px',
-  // margin: '20px auto',
+  // width: '100vw',
+  // height: 'calc(100vh - 80px)',
+  // position: 'absolute',
 })
 
 const Sidebar = styled('div')({
@@ -66,3 +70,47 @@ export default function Mapbox({ lng: initLng, lat: initLat }) {
     </div>
   )
 }
+*/
+
+////////////////////////////////
+////////////////////////////////
+
+import React, { useEffect, useRef, useState } from 'react'
+import mapboxgl from '!mapbox-gl'
+import 'mapbox-gl/dist/mapbox-gl.css'
+
+const styles = {
+  height: '375px',
+  // width: 'auto',
+  // height: 'calc(100vh - 80px)',
+  // position: 'absolute',
+}
+
+const Mapbox = ({ lng, lat }) => {
+  const [map, setMap] = useState(null)
+  const mapContainer = useRef(null)
+
+  useEffect(() => {
+    mapboxgl.accessToken =
+      'pk.eyJ1IjoiYXRhbmFzLWlyaWtldiIsImEiOiJjbDI3YjMyengwMWJvM2RueDlwaHZwc29oIn0._e2TrV0-QGeyabs40wyKsA'
+    const initializeMap = ({ setMap, mapContainer }) => {
+      const map = new mapboxgl.Map({
+        container: mapContainer.current,
+        style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
+        center: [lng, lat],
+        zoom: 9,
+      })
+
+      map.on('load', () => {
+        setMap(map)
+        map.resize()
+      })
+    }
+
+    if (!map) initializeMap({ setMap, mapContainer })
+  }, [map])
+
+  return <div ref={el => (mapContainer.current = el)} style={styles} />
+}
+
+export default Mapbox

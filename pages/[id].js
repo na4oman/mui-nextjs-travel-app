@@ -40,73 +40,65 @@ function TourDetail() {
         <meta name='description' content={tour.description} />
       </Head>
       <Container maxWidth='lg'>
-        <Typography component='h1' variant='h3' my={1.5} textAlign='center'>
+        <Typography
+          component='h1'
+          my={1.5}
+          textAlign='center'
+          sx={{
+            typography: {
+              xs: 'h5',
+              sm: 'h4',
+              md: 'h3',
+            },
+          }}
+        >
           {tour.name}
         </Typography>
-        <Grid
-          container
-          spacing={2}
-          // sx={{
-          //   display: 'grid',
-          //   gridTemplateColumns: 'repeat(6, 2fr)',
-          //   gap: 2,
-          // }}
-        >
-          <Grid item xs={6}>
-            <Box
-            // sx={{
-            //   display: 'grid',
-            //   gridTemplateColumns: 'repeat(4, 1fr)',
-            //   gap: 1,
-            // }}
-            >
-              {/* <Box sx={{ gridColumn: 'span 3' }}>
-            <Image src={tour.image} alt={tour.name} width={600} height={300} />
-          </Box>
-          <Box sx={{ gridColumn: '4' }}>
-            <QuiltedImageList />
-          </Box> */}
+        <Grid container spacing={2}>
+          <Grid item xs={12} md={6}>
+            <Box>
               <DemoCarousel images={images} />
             </Box>
-            <Box
-              sx={{
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'space-between',
-                my: 2,
-                pl: 2,
-                pr: 4,
-              }}
-            >
-              <Box sx={{ display: 'flex' }}>
-                <AccessTimeIcon fontSize='small' color='action' />
-                <Typography component='p' variant='body2' ml={1}>
-                  {tour.duration} hours
+            <Grid container alignItems='center'>
+              <Grid item xs={3}>
+                <Box sx={{ display: 'flex', alignItems: 'center' }}>
+                  <AccessTimeIcon fontSize='small' color='action' />
+                  <Typography component='p' variant='body2' ml={1}>
+                    {tour.duration} hours
+                  </Typography>
+                </Box>
+              </Grid>
+              <Grid item xs={7}>
+                <Box
+                  sx={{
+                    display: 'flex',
+                    alignItems: 'center',
+                  }}
+                >
+                  <Rating
+                    name='read-only'
+                    value={tour.rating}
+                    precision={0.5}
+                    readOnly
+                  />
+                  <Typography component='body1' variant='body2' ml={1} mr={1}>
+                    {tour.rating.toFixed(1)}
+                  </Typography>
+                  <Typography component='body2' variant='body3'>
+                    ({tour.numberOfReviews} reviews)
+                  </Typography>
+                </Box>
+              </Grid>
+              <Grid item xs={2}>
+                <Typography
+                  component='p'
+                  sx={{ typography: { xs: 'h6', sm: 'h5' } }}
+                >
+                  $ {tour.price}
                 </Typography>
-              </Box>
-              <Box
-                sx={{
-                  display: 'flex',
-                  alignItems: 'center',
-                }}
-              >
-                <Rating
-                  name='read-only'
-                  value={tour.rating}
-                  precision={0.5}
-                  readOnly
-                />
-                <Typography component='p' variant='body2' ml={1} mr={2}>
-                  {tour.rating.toFixed(1)}
-                </Typography>
-                <Typography component='p' variant='body3'>
-                  ({tour.numberOfReviews} reviews)
-                </Typography>
-              </Box>
-              <Typography component='p' variant='h5'>
-                $ {tour.price}
-              </Typography>
-            </Box>
+              </Grid>
+              {/* </Box> */}
+            </Grid>
             <Box mb={5}>
               <Typography component='h2' variant='h6' my={2}>
                 About this ticket
@@ -115,14 +107,14 @@ function TourDetail() {
                 {tour.description}
               </Typography>
             </Box>
-            <Box mb={10}>
+            <Box mb={2}>
               <Typography component='h2' variant='h6' my={2}>
                 Frequently Asked Questions
               </Typography>
               <CustomizedAccordions />
             </Box>
           </Grid>
-          <Grid item xs={6}>
+          <Grid item xs={12} md={6}>
             <Mapbox lng={lng} lat={lat} />
           </Grid>
         </Grid>
