@@ -108,6 +108,9 @@ const Mapbox = ({ lng, lat }) => {
         setMap(map)
         map.resize()
       })
+
+      // // Create a new marker.
+      const marker = new mapboxgl.Marker().setLngLat([lng, lat]).addTo(map)
     }
 
     if (!map) initializeMap({ setMap, mapContainer })

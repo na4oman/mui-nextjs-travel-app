@@ -11,7 +11,7 @@ function DemoCarousel({ images }) {
     <Carousel infiniteLoop useKeyboardArrows>
       {images.map((image, index) => (
         <div key={index}>
-          <img src={image} />
+          <img src={image} alt={image} />
         </div>
       ))}
     </Carousel>

@@ -14,7 +14,7 @@ import QuiltedImageList from '../components/QuiltedImageList'
 import cities from '../src/data.json'
 import Spinner from '../components/Spinner'
 import DemoCarousel from '../components/Carousel'
-import Mapbox from '../components/MapBox'
+import Mapbox from '../components/Mapbox'
 import Grid from '@mui/material/Grid'
 
 function TourDetail() {
@@ -81,10 +81,10 @@ function TourDetail() {
                     precision={0.5}
                     readOnly
                   />
-                  <Typography component='body1' variant='body2' ml={1} mr={1}>
+                  <Typography component='p' variant='body2' ml={1} mr={1}>
                     {tour.rating.toFixed(1)}
                   </Typography>
-                  <Typography component='body2' variant='body3'>
+                  <Typography component='p' variant='body3'>
                     ({tour.numberOfReviews} reviews)
                   </Typography>
                 </Box>
