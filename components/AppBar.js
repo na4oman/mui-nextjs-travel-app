@@ -9,7 +9,7 @@ import InputBase from '@mui/material/InputBase'
 import MenuIcon from '@mui/icons-material/Menu'
 import SearchIcon from '@mui/icons-material/Search'
 import Link from 'next/link'
-import cities from '../src/data.json'
+import cities from '../data/data.json'
 import AppContext from '../src/context/state'
 import BookmarksIcon from '@mui/icons-material/Bookmarks'
 import Badge from '@mui/material/Badge'
@@ -66,6 +66,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 export default function SearchAppBar({ onToggleDrawer }) {
   const appCtx = React.useContext(AppContext)
+  // const [open, setOpen] = React.useState(false)
 
   function handleSearchChange(e) {
     const filterValue = e.target.value.toLowerCase()
@@ -87,8 +88,8 @@ export default function SearchAppBar({ onToggleDrawer }) {
   function closeBookmarks() {}
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position='static' color='primary'>
+    <Box sx={{ flexGrow: 1 }} mb={10}>
+      <AppBar position='fixed' color='primary'>
         <Toolbar>
           <IconButton
             onClick={onToggleDrawer}
@@ -124,7 +125,8 @@ export default function SearchAppBar({ onToggleDrawer }) {
             />
           </Search>
           <IconButton
-            onClick={closeBookmarks}
+            // onClick={closeBookmarks}
+            // onClick={e => setOpen(prevState => !prevState)}
             size='large'
             edge='start'
             color='inherit'

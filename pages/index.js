@@ -1,4 +1,4 @@
-import { useState, useContext } from 'react'
+import { useContext, useState } from 'react'
 import Typography from '@mui/material/Typography'
 import Container from '@mui/material/Container'
 import Grid from '@mui/material/Grid'
@@ -6,8 +6,8 @@ import Box from '@mui/material/Box'
 import Pagination from '@mui/material/Pagination'
 import Stack from '@mui/material/Stack'
 import TourCard from '../components/TourCard'
-import AppContext from '../src/context/state'
 import usePagination from '../src/Pagination'
+import AppContext from '../src/context/state'
 
 function Home() {
   const appCtx = useContext(AppContext)
@@ -42,7 +42,7 @@ function Home() {
 
   return (
     <Container maxWidth='lg'>
-      <Box component='div'>
+      <Box>
         <Typography
           component='h2'
           variant='h4'
@@ -53,12 +53,11 @@ function Home() {
           Most Visited Destinations
         </Typography>
         <Grid
-          mb={5}
           container
           direction='row'
+          sx={{ justifyContent: { xs: 'center', sm: 'flex-start' } }}
           spacing={2}
-          justifyContent='flex-start'
-          alignItems='flex-start'
+          mb={5}
         >
           {_DATA.currentData().map(tour => (
             <TourCard tour={tour} key={tour.id} />

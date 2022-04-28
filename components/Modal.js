@@ -2,7 +2,7 @@ import * as React from 'react'
 import Box from '@mui/material/Box'
 import Button from '@mui/material/Button'
 import Modal from '@mui/material/Modal'
-import StaticDateRangePickerDemo from './DatePicker.js'
+import { DateRangePickerDesktop, DateRangePickerMobile } from './DatePicker.js'
 
 const style = {
   position: 'absolute',
@@ -13,7 +13,7 @@ const style = {
   bgcolor: 'background.paper',
   border: '2px solid #000',
   boxShadow: 24,
-  p: 4,
+  p: { xs: 1, sm: 4 },
 }
 
 export default function BasicModal() {
@@ -31,7 +31,12 @@ export default function BasicModal() {
         aria-describedby='modal-modal-description'
       >
         <Box sx={style}>
-          <StaticDateRangePickerDemo />
+          <Box sx={{ display: { xs: 'none', md: 'block' } }}>
+            <DateRangePickerDesktop />
+          </Box>
+          <Box sx={{ display: { xs: 'block', md: 'none' } }}>
+            <DateRangePickerMobile />
+          </Box>
         </Box>
       </Modal>
     </div>

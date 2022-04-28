@@ -45,7 +45,11 @@ export default function Mapbox({ lng: initLng, lat: initLat }) {
       center: [lng, lat],
       zoom: zoom,
     })
-  })
+
+    // return () => {
+    //   map.current.remove()
+    // }
+  }, [lng, lat, zoom, map, initLng, initLat])
 
   useEffect(() => {
     if (!map.current) return // wait for map to initialize
@@ -54,12 +58,14 @@ export default function Mapbox({ lng: initLng, lat: initLat }) {
       setLat(map.current.getCenter().lat.toFixed(4))
       setZoom(map.current.getZoom().toFixed(2))
     })
-  })
 
-  // Create a new marker.
-  // const marker = new mapboxgl.Marker()
-  //   .setLngLat([12.65147, 55.608166])
-  //   .addTo(map)
+    // return () => {
+    //   map.current.remove()
+    // }
+
+    // Create a new marker.
+    const marker = new mapboxgl.Marker().setLngLat([lng, lat]).addTo(map)
+  })
 
   return (
     <div style={{ position: 'relative', marginBottom: '50px' }}>
@@ -71,7 +77,6 @@ export default function Mapbox({ lng: initLng, lat: initLat }) {
   )
 }
 */
-
 ////////////////////////////////
 ////////////////////////////////
 

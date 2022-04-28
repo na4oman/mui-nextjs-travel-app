@@ -12,6 +12,8 @@ import Rating from '@mui/material/Rating'
 import Grid from '@mui/material/Grid'
 import { useRouter } from 'next/router'
 import AppContext from '../src/context/state'
+import FavoriteIcon from '@mui/icons-material/Favorite'
+import SendIcon from '@mui/icons-material/Send'
 
 function TourCard({ tour }) {
   const router = useRouter()
@@ -23,7 +25,7 @@ function TourCard({ tour }) {
   }
 
   return (
-    <Grid item xs={12} sm={6} md={4} lg={3}>
+    <Grid item xs='auto' sm={6} md={4} lg={3}>
       <Card sx={{ maxWidth: 345 }}>
         <CardMedia>
           <Image
@@ -65,10 +67,20 @@ function TourCard({ tour }) {
           </Typography>
         </CardContent>
         <CardActions>
-          <Button size='small' onClick={handleLikes}>
+          <Button
+            size='small'
+            onClick={handleLikes}
+            // startIcon={<FavoriteIcon />}
+            // variant='contained'
+          >
             Like
           </Button>
-          <Button size='small' onClick={() => router.push(`/${tour.id}`)}>
+          <Button
+            size='small'
+            onClick={() => router.push(`/${tour.id}`)}
+            // variant='contained'
+            // endIcon={<SendIcon />}
+          >
             Learn More
           </Button>
         </CardActions>

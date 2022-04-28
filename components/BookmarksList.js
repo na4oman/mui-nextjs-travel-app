@@ -15,7 +15,7 @@ export default function BookmarksList() {
   const router = useRouter()
   const appCtx = React.useContext(AppContext)
 
-  const bookmarks = appCtx.bookmarks
+  const { bookmarks, deleteFromBookmark } = appCtx
 
   return (
     <List sx={{ width: '160%', maxWidth: 900, bgcolor: 'background.paper' }}>
@@ -62,7 +62,7 @@ export default function BookmarksList() {
               <DeleteIcon
                 onClick={event => {
                   event.stopPropagation()
-                  appCtx.deleteFromBookmark(bookmark.id)
+                  deleteFromBookmark(bookmark.id)
                 }}
               />
             </ListItem>
