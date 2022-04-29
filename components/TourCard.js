@@ -12,17 +12,14 @@ import Rating from '@mui/material/Rating'
 import Grid from '@mui/material/Grid'
 import { useRouter } from 'next/router'
 import AppContext from '../src/context/state'
-import FavoriteIcon from '@mui/icons-material/Favorite'
-import SendIcon from '@mui/icons-material/Send'
+// import FavoriteIcon from '@mui/icons-material/Favorite'
+// import SendIcon from '@mui/icons-material/Send'
 
 function TourCard({ tour }) {
   const router = useRouter()
 
   const appCtx = React.useContext(AppContext)
-
-  function handleLikes() {
-    appCtx.addToBookmark(tour)
-  }
+  const { addToBookmark } = appCtx
 
   return (
     <Grid item xs='auto' sm={6} md={4} lg={3}>
@@ -69,7 +66,7 @@ function TourCard({ tour }) {
         <CardActions>
           <Button
             size='small'
-            onClick={handleLikes}
+            onClick={() => addToBookmark(tour)}
             // startIcon={<FavoriteIcon />}
             // variant='contained'
           >

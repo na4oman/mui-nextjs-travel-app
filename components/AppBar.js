@@ -66,23 +66,13 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 export default function SearchAppBar({ onToggleDrawer }) {
   const appCtx = React.useContext(AppContext)
-  // const [open, setOpen] = React.useState(false)
+
+  const { filterCities, bookmarks } = appCtx
 
   function handleSearchChange(e) {
     const filterValue = e.target.value.toLowerCase()
 
-    appCtx.filterCities(filterValue)
-
-    // if (!filterValue || filterValue === '') return appCtx.filterCities(allTours)
-
-    // const filteredTours = allTours.filter(tour =>
-    //   tour.name.toLowerCase().includes(filterValue)
-    // )
-
-    // if (!filteredTours || filteredTours.length === 0)
-    //   return appCtx.filterCities([])
-
-    // appCtx.filterCities(filteredTours)
+    filterCities(filterValue)
   }
 
   function closeBookmarks() {}
@@ -149,7 +139,7 @@ export default function SearchAppBar({ onToggleDrawer }) {
               // tabIndex: 1,
             }}
           >
-            <Badge badgeContent={appCtx.bookmarks.length} color='error'>
+            <Badge badgeContent={bookmarks.length} color='error'>
               <BookmarksIcon />
             </Badge>
             <Box
