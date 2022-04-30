@@ -75,7 +75,7 @@ export default function SearchAppBar({ onToggleDrawer }) {
     filterCities(filterValue)
   }
 
-  function closeBookmarks() {}
+  // function closeBookmarksMenu() {}
 
   return (
     <Box sx={{ flexGrow: 1 }} mb={10}>
@@ -115,7 +115,7 @@ export default function SearchAppBar({ onToggleDrawer }) {
             />
           </Search>
           <IconButton
-            // onClick={closeBookmarks}
+            // onClose={closeBookmarksMenu}
             // onClick={e => setOpen(prevState => !prevState)}
             size='large'
             edge='start'
@@ -130,13 +130,6 @@ export default function SearchAppBar({ onToggleDrawer }) {
                   opacity: 1,
                 },
               },
-              // '&:focus': {
-              //   '& .bookmarksList': {
-              //     visibility: 'visible',
-              //     opacity: 1,
-              //   },
-              // },
-              // tabIndex: 1,
             }}
           >
             <Badge badgeContent={bookmarks.length} color='error'>

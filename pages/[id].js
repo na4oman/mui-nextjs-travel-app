@@ -18,6 +18,7 @@ import Spinner from '../components/Spinner'
 import DemoCarousel from '../components/Carousel'
 import Mapbox from '../components/Mapbox'
 import Grid from '@mui/material/Grid'
+import Comments from '../components/Comments'
 
 function TourDetail({ tour }) {
   if (!tour) {
@@ -114,6 +115,7 @@ function TourDetail({ tour }) {
           </Grid>
           <Grid item xs={12} md={6}>
             <Mapbox lng={lng} lat={lat} />
+            <Box mt={5}>{/* <Comments tourId={tour.id} /> */}</Box>
           </Grid>
         </Grid>
         <Paper
