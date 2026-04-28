@@ -28,7 +28,7 @@ function Comments({ tourId }) {
 
   const { comments } = data
 
-  if (comments.length === 0) {
+  if (!comments || comments.length === 0) {
     return (
       <Stack>
         {/* <Box textAlign='center'>
